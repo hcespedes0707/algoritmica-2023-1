@@ -1,7 +1,4 @@
-from kruskal import *;
-from prim import *;
-
-
+from Algoritmos_vorazes import Algoritmos_vorazes
 
 nodes = ['a','b','c','d','e','f', 'g']
 edges = [
@@ -15,15 +12,14 @@ edges = [
     ('d', 'b', 9),
     ('d', 'e', 15),
     ('b', 'e', 7),
-    ('e', 'f', 4)
+    ('e', 'f', 8)
 ]
 
-
 if __name__ == '__main__':
-    kruskal = Kruskal()
-    met = kruskal.apply_kruskal(nodes, edges)
-    prim = Prim()
-    metw = prim.apply_prim(nodes, edges)
-    print("Kruskal: ",met)
-    print("Prim:    ",metw)
+    Algoritmos_vorazes = Algoritmos_vorazes()
+    met = Algoritmos_vorazes.apply_kruskal(nodes, edges)
+    result = Algoritmos_vorazes.apply_prim(nodes, edges)
+    print(met)
+    print(result)
+
 
