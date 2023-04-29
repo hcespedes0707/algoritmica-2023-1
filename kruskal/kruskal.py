@@ -46,7 +46,7 @@ class Kruskal:
         for node in nodes:
             self.initialize_data(node)
         # Ordeno el grafo
-        sorted_edges = self.sort_graph(self.sort_graph(edges))
+        sorted_edges = self.sort_graph(edges)
         for edge in sorted_edges:
             # Obtenemos los valores del nodo para hacer el analisis del grafo
             origin, destination, weight = edge
